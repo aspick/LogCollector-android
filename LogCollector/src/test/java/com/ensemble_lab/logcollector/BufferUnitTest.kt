@@ -14,7 +14,7 @@ class BufferUnitTest {
 
         buffer.pushLogs(listOf(log))
 
-        assertEquals(1, buffer.data.count())
+        assertEquals(false, buffer.isEmpty())
     }
 
     @Test

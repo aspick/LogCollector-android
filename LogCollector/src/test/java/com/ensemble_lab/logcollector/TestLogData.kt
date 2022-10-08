@@ -7,4 +7,8 @@ class TestLogData(val id: String, val time: LocalDateTime, val message: String):
     override fun orderKey(): Long {
         return time.toInstant(ZoneOffset.UTC).epochSecond
     }
+
+    override fun payload(): Map<String, Any> {
+        return mapOf("id" to id)
+    }
 }

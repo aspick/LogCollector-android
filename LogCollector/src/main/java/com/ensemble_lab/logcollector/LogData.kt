@@ -11,4 +11,11 @@ interface LogData {
      * @return order index value
      */
     fun orderKey() :Long
+
+    /**
+     * Get log payload for API call
+     *
+     * @return log content payload
+     */
+    fun payload() :Map<String, Any>
 }
